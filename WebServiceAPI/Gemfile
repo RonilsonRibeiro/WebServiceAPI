@@ -1,6 +1,4 @@
 source "https://rubygems.org"
 
-require "cucumber"
-require "httparty"
-require "httparty/request"
-require "httparty/response/headers"
+gem "cucumber"
+gem "httparty"
