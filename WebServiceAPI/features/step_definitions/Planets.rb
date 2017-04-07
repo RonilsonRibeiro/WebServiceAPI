@@ -15,10 +15,10 @@ Then(/^Recebe o statuscode e uma mensagem$/) do
     when 200
       puts "API funcionando corretamente."
     when 404
-      puts "API não encontrada."
+      puts "API não encontrada. #{@response.code}"
     when 500...600
-      puts "Falha #{response.code}"   
+      puts "Falha #{@response.code}"   
   end
   
-  puts 'Message: ' + @response.message
+  puts 'Message: ' + @response.message 
 end
